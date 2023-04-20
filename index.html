@@ -1,1 +1,95 @@
 
+<!DOCTYPE html> <!--khai báo doctype, đây là bắt buộc mang ý nghĩa khai báo đây là file html-->
+<!--thẻ thông dụng trong html
+1. h1-h6  => tiêu đề
+2. p  =>paragrap ==> nội dung đoạn văn 
+3. img
+4. a
+5.ul, li
+6. table 
+7. input 
+8. button
+9. div 
+
+-->
+
+<html>        <!--cặp thẻ html duy nhất, mỗi file chỉ có 1 cặp này-->
+    <head>     <!--phần đầu-->
+        <title>tự học html</title>    <!--hiển thị title của web, sẽ hiển thị ở tab-->
+
+        <!-- sử dụng CSS internal trong HTML-->
+        <!--<style>
+            h1{
+                color: red;
+                font-size: 20px; 
+            }
+        </style> 
+        <link rel="stylesheet" href ="main.css">-->
+
+
+    </head>
+    <body>  <!--phần nội dung file, ở đây có gì thì sẽ được show lên trang web phần nội dung
+    -->
+        <h1 style="color: red; font-size: 20px"> Giá xăng dầu có thể giảm mạnh trong kỳ điều hành ngày mai 12/12 </h1>
+        <p title = "đây là nội dung quan trọng" width ="50%" color ="red"> Theo lịch, kỳ điều chỉnh giá xăng dầu diễn ra ngày 11/12, nhưng do vào Chủ nhật nên thời gian điều hành được liên Bộ Tài chính - Công Thương lùi sang 15h thứ Hai (12/12).</p>
+        <img title="đây là title" src="https://congthuong.vn/stores/news_dataimages/2022/122022/11/10/13b854875a949dcac485-4324-167068388120221211100822.jpg?rt=20221211100823"alt="ảnh minh họa">
+        <p>Dữ liệu từ Bộ Công Thương cho thấy, giá xăng dầu thành phẩm trên thị trường Singapore hiện tại giảm mạnh so với kỳ điều hành trước đó (1/12).<br> <br>Cụ thể, bình quân xăng RON 92 (loại dùng pha chế xăng E5 RON 92) là 85,2 USD/thùng; xăng RON 95 là 89,6 USD/thùng. Trong khi đó, bình quân giá thành phẩm xăng dầu thế giới kỳ điều hành trước với xăng RON 92 là 89,3 USD/thùng; xăng RON 95 là 93,9 USD/thùng.</p>
+        <h2 title="đay là tiêu đề",>something?</h2>
+        <input type="text" name="inputname" id="inputid" value="Hello 'freetuts.net'"/>
+
+        
+        <img src="this image" alt="this is image">
+        
+
+
+
+            <P> Như vậy, so với chu kỳ trước, bình quân giá xăng RON 92 ở chu kỳ này giảm khoảng 4,1 USD/thùng, bình quân giá xăng RON 95 giảm khoảng 4,3 USD/thùng.</P>
+
+            <p class ="c12"> đoạn văn 1</p>
+            <p class ="c12"> đoạn văn 2</p>
+            <p class ="c2 c12"> đoạn văn 2</p>
+            <p class ="c3 c12"> đoạn văn 3</p>
+            <p class ="c4"> đoạn văn 4</p>
+            <div class="parent"> 
+                <p class="son1"> đoạn văn 5</p>
+                <p class="son2"> đoạn văn 6</p>
+            </div>
+            
+
+            <!-- ví dụ 1: selector qua 1 class
+            ví dụ 2: selector qua nhiều class
+        ví dụ 3: selector qua class con-->
+
+        <style>
+            :root{
+                --text-color: red
+                
+            }
+            :root{
+                --text2-color: green
+            }
+          
+
+            .c12 {
+                color:var(--text-color)
+            }
+           
+            .c2.c12{
+                color:var(--text2-color)
+            }
+            .parent p {
+                color:red
+            }
+            .parent .son2 {
+                color:blue
+            }
+        </style> 
+        
+
+    <!--ví dụ về đặt biến-->
+    
+
+
+
+    </body>
+</html>
